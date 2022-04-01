@@ -9,15 +9,17 @@ color: #969696;
 body {
     padding-left: 50px;
     padding-right: 50px;
-    font-family: Source-Sans-Pro sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 header > h1 {
     text-align: center;
     font-weight: 900;
-    font-family: Abril Fatface sans-serif;
+    font-family: 'Abril Fatface' , sans-serif;
 }
-
+main h2 {
+    font-family: 'Roboto Slab', sans-serif;
+}
 nav > ul {
     border-top: #969696 1px solid;
     border-bottom: #969696 1px solid;
@@ -26,31 +28,104 @@ nav > ul {
     padding-right: 10px;
 }
 
+nav {
+    position: sticky;
+    top: 0;
+    background-color: lightgray;
+}
+
 nav > ul > li {
   list-style: none;
  /* border: black 1px solid;*/
   display: inline-block;
   width: 10%;
   margin-left: 10px;
+  padding: 5px;
   
 }
 
 nav > ul > li > a {
     color: #969696;
     text-decoration: none;
+    
+}
+
+
+nav a:hover {
+  background-color: white;
+  border-radius: 10%;
 }
 
 main  img {
   display: inline-block;
   width: 100%;
 }
+
+main h5 {
+    color: red;
+}
 .more-articles {
-    
+    border-top: #969696 1px solid;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 section {
     display: inline-block;
-    border: black 2px solid;
-    width: 45%;
-    margin-right: 83px;
+    /*border: black 2px solid;*/
+    width: 40%;
+    margin: auto;
+    margin-right: 70px;
+    margin-left: 70px;
+    
 }
+
+section img {
+    display: block;
+    width: 100%;
+}
+
+.flex-box-container {
+display: flex;
+}
+
+
+footer ul {
+    margin-top: 50px;
+    padding: 5px;
+    border-top: #D6D6D6 1px solid;
+}
+
+/*
+
+footer > ul {
+    border-top: #969696 1px solid;
+    border-bottom: #969696 1px solid;
+
+    padding-left: 100px;
+    padding-right: 10px;
+}
+*/
+
+footer  li {
+    display: inline-block;
+    list-style: none;
+    padding-left: 100px;
+    padding-right: 10px;
+ 
+
+}
+
+footer  a:hover {
+    background-color: grey;
+    border-radius: 10%;
+    color: white;
+}
+
+footer a {
+  margin: 50px;
+  text-decoration: none;
+  color: #969696;
+  text-align: center;
+}
+
